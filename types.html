@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Input Types in forms</h1>
+
+    <form>
+        <fieldset> 
+            <legend><h3>Personal Information</h3></legend>
+
+
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" placeholder="Full Name" required><br>
+
+        <label for="pw">Password:</label>
+        <input type="password" name="password" id="pw" placeholder="Password" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="example@google.com">
+         <br>
+        <label for="number">Number:</label>
+        <input type="number" name="number" id="number" placeholder="1234567890">
+         <br>
+        </fieldset>
+
+         <label for="date">Date of Birth:</label>
+         <input type="date" name="date" id="date">
+        <br>
+        <label for="resume">Uplod Your resume:</label>
+        <input type="file" name="resume" id="resume" ><br>
+        <label for="colour">Pick your color</label>
+        <input type="color" name="color" id="color" value="ff1234">
+        <br> 
+
+        
+        <label> <input type="radio" name="gender" value="male">male</label>
+        <label> <input type="radio" name="gender" value="female">female</label>
+        <label> <input type="radio" name="gender" value="other">other</label>
+        <br>
+        <p>Selec Hobbies </p>
+
+        <label><input type="checkbox" name="hobby" value="reading" >Reading</label>
+        <label><input type="checkbox" name="hobby" value="gaming" >Gaming</label>
+        <label><input type="checkbox" name="hobby" value="gym" >Gym</label>
+        <label><input type="checkbox" name="hobby" value="coading">Coding</label>
+        <label><input type="checkbox" name="hobby" value="running">Running</label>
+           <br>
+        <button type="submit">Sigh Up</button> <br>
+         <button type="reset">Click here to reset</button><br>
+        <button type="button">Click Me</button>
+
+        <br><br>
+        <label for="volume">Volume:</label>
+        <input type="range" name="volume" id="volume" min="0" max="100" value="50"><br>
+
+
+
+       
+    </form>
+</body>
+</html>

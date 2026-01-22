@@ -3,91 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flex Container & items</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        body{
             font-family: Arial, Helvetica, sans-serif;
-            box-sizing: border-box;
+            padding: 40px;
+            background: #f7f7f7;
         }
-        html, body {
-            width: 100%;
-            height: 100%;
+        .flex-box {
+            display: flex;
+            background: white;
+            border: 2px solidd #ddd;
+            padding: 20px;
+            border-radius: 10px;
+
         }
-        #main{
-            padding: 50px;
-            width: 100%;
-            height: 100%;
-            background-color: #222;
-            
+        .item {
+            background: #90e0ef;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 22px;
+            text-align: center;
+            flex: 1;
         }
-      input{
-        display: block;
-      }
-      .card {
-        max-width: 300px;
-        color: white;
-        margin-top: 40px;
-        border-radius: 10px;
-        display: inline-block;
-        padding: 20px;
-        border: 2px solid #867d7d;
-      }
-      .profile {
-        width: 50px;
-        height: 50px;
-        
-        border-radius: 50%;
-        margin-bottom: 7px;
-        overflow: hidden;
-      }
-      .profile img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-      }
-      .card p {
-        font-size: 12px;
-        margin: 10px;
-      }
-      .card h5 {
-        margin-top: 3px;
-      }
-        
-        
-        
     </style>
 </head>
-
 <body>
-    <div id ="main">
-       <form id="my form">
-            <input type="text" placeholder="name">
-            <input type="text" placeholder="age">
-             <input type="text" placeholder="email">
-           <input type="text" placeholder="profile pic">
-            <input type="submit">
-
-       </form>
-       <div class="card">
-           <div class="profile">
-            <img src="https://media.istockphoto.com/id/1333629047/photo/woman-at-the-lake.jpg?s=612x612&w=0&k=20&c=9MGeY8H73wMJTO5MpGtBGfNDvoGP5CM-7fkt7krvHiM=" alt="">
-           </div>
-           <h3>Surya Shiva </h3>
-            <h5>Creative Coder</h5>
-            <p>Surya Shiva is a passionate creative coder and developer, crafting intelligent, elegant solutions with curiosity and precision, blending artful logic and innovation in every project he builds.</p>
-
-       </div>
+    <h1>Flex Container & Items (display: flex)</h1>
+    <div class="flex-box">
+        <div class="item">Box 1</div>
+        <div class="item">Box 2</div>
+        <div class="item">Box 3</div>
     </div>
-
-    
-    
-    
-    
-    
-    <script src="script.js"></script>
-
 </body>
-
 </html>
